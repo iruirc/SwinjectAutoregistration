@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SwinjectAutoregistration",
             dependencies: [
-                "Swinject",
+                .product(name: "Swinject-Dynamic", package: "Swinject")
             ],
             path: "Sources"),
     ]
